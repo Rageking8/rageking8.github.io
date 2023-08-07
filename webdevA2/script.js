@@ -1125,10 +1125,17 @@ class Program
         this.#dom_refs["main-section-h2"].innerText =
             this.#typewriter_ani.get_str();
         
-        this.#dom_refs["main-landing-section"].style.clipPath =
-            "path(\'M 0 0 L " + width + " 0 " + width + " " + (height * 1.14) + " C " +
-            (width * 0.75) + " " + (height * 1.35) + ", " + (width * 0.25) + " " +
-            (height * 1.05) + ", 0 " + (height * 1.2) + " z\')";
+        if (window.innerWidth > 800)
+        {
+            this.#dom_refs["main-landing-section"].style.clipPath =
+                "path(\'M 0 0 L " + width + " 0 " + width + " " + (height * 1.14) + " C " +
+                (width * 0.75) + " " + (height * 1.35) + ", " + (width * 0.25) + " " +
+                (height * 1.05) + ", 0 " + (height * 1.2) + " z\')";
+        }
+        else
+        {
+            this.#dom_refs["main-landing-section"].style.clipPath = "";
+        }
 
         // Update sandbox text displays
         this.#dom_refs["sandbox-current-price"].innerText =
