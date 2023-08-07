@@ -1,0 +1,528 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 10vh;
+    min-height: 115vh;
+    color: white;
+    background-color: #0c0c0c;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    height: 10vh;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    margin: 2vh;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: #ffffff22;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-image:
+        linear-gradient(#0d0d0d, #242323);
+}
+
+footer * {
+    margin: 20px;
+}
+
+footer p {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90vw;
+    margin: 2.5vw;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    scroll-margin-top: 12vh;
+    background-color: #ffffff22;
+    transition: transform 2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    width: 100%;
+    margin-left: 5px;
+}
+
+.card img {
+    width: calc(50% - 10px);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .card img {
+        width: 100%;
+    }
+}
+
+.card a:link {
+    color: #3f76ff;
+}
+
+.card a:visited {
+    color: #9e34be;
+}
+
+#main-landing-section {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #07001b;
+    background-image:
+        radial-gradient(circle at 15% 20%, #5e161668, transparent 30%),
+        radial-gradient(circle at 35% 39%, #10394c8e, transparent 25%),
+        radial-gradient(circle at 12% 91%, #53136357, transparent 20%),
+        radial-gradient(circle at 67% 0%, #3e0c3796, transparent 15%),
+        radial-gradient(circle at 63% 78%, #104e2b83, transparent 30%),
+        radial-gradient(circle at 92% 50%, #161363a1, transparent 20%);
+}
+
+@media screen and (max-width: 800px) {
+    #main-landing-section {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+#main-landing-section > :first-child {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 50%;
+    min-height: 200px;
+}
+
+#main-landing-section h1 {
+    margin-top: 30vh;
+}
+
+#main-landing-section h1, #main-landing-section h2 {
+    color: white;
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+    animation: fade-in 1s linear;
+}
+
+#main-landing-section h2 {
+    --blink-start-color: #00ff0380;
+    --blink-end-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    #main-landing-section h1 {
+        margin-top: 0px;
+    }
+
+    #main-landing-section h2 {
+        margin-bottom: 0px;
+    }
+
+    #main-section-chart {
+        height: 45vh;
+    }
+}
+
+.block-cursor::after {
+    content: "\00a0";
+    display: inline-block;
+    margin-left: 2px;
+    width: 10px;
+
+    animation: blink var(--blink-ani-duration, 1s) infinite;
+}
+
+#content-section {
+    margin-top: -10vh;
+    background-image:
+        radial-gradient(circle at 20% 42%, #186d1841, transparent 25%),
+        radial-gradient(circle at 40% 63%, #761b1b5b, transparent 29%),
+        radial-gradient(circle at 85% 60%, #1421588c, transparent 26%);
+}
+
+@media screen and (max-width: 800px) {
+    #content-section {
+        flex-flow: column nowrap;
+    }
+}
+
+.ol-left-accent {
+    margin: 20px;
+    padding: 10px 10px 10px 45px;
+    max-width: 100vw;
+    border-left: 3px solid white;
+}
+
+.li-translucent {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff11;
+}
+
+.li-translucent a {
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.li-hover {
+    transition: transform 0.5s;
+}
+
+.li-hover:hover {
+    transform: translateX(10px);
+}
+
+#trading-instruments-section, #types-of-traders-section {
+    flex-direction: column;
+    background-image:
+        radial-gradient(circle at 62% 0%, #5a258535, transparent 15%),
+        radial-gradient(circle at 12% 10%, #6b1e1e75, transparent 15%),
+        radial-gradient(circle at 85% 20%, #162d5e96, transparent 20%),
+        radial-gradient(circle at 10% 33%, #2f611f5e, transparent 20%),
+        radial-gradient(circle at 71% 42%, #3e3a0c89, transparent 20%),
+        radial-gradient(circle at 20% 53%, #104e2b6b, transparent 15%),
+        radial-gradient(circle at 92% 48%, #191678a1, transparent 20%),
+        radial-gradient(circle at 55% 63%, #6718185b, transparent 15%),
+        radial-gradient(circle at 18% 72%, #4a0f644d, transparent 13%),
+        radial-gradient(circle at 70% 78%, #166a673c, transparent 13%),
+        radial-gradient(circle at 30% 88%, #57741e3c, transparent 13%),
+        radial-gradient(circle at 90% 93%, #4c236852, transparent 15%);
+}
+
+#trading-instruments-section header,
+#types-of-traders-section header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#trading-instruments-section header h1,
+#types-of-traders-section header h1 {
+    width: 100%;
+
+    animation: fade-in 1s linear;
+}
+
+#trading-instruments-section header ol,
+#types-of-traders-section header ol {
+    display: flex;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    width: calc(50% - 40px);
+}
+
+#trading-instruments-list-1 li:nth-child(odd),
+#trading-instruments-list-2 li:nth-child(odd),
+#types-of-traders-list-1 li:nth-child(odd),
+#types-of-traders-list-2 li:nth-child(odd) {
+    background-color: #ffffff20;
+}
+
+@media screen and (max-width: 800px) {    
+    #trading-instruments-section header ol,
+    #types-of-traders-section header ol {
+        width: 100%;
+    }
+
+    #trading-instruments-list-1, #types-of-traders-list-1 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    #trading-instruments-list-2, #types-of-traders-list-2 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    #trading-instruments-list-2 li:nth-child(odd)
+    {
+        background-color: #ffffff11;
+    }
+
+    #trading-instruments-list-1 li:nth-child(odd),
+    #trading-instruments-list-2 li:nth-child(even)
+    {
+        background-color: #ffffff20;
+    }
+}
+
+#trading-instruments-section header ol li,
+#types-of-traders-section header ol li {
+    padding: 0px;
+    margin: 5px;
+}
+
+#trading-instruments-section .card:last-of-type {
+    margin-bottom: 5vw;
+}
+
+.candle-chart {
+    /* Set via JS for current price line on chart */
+    --candle-chart-current-price-line: 0;
+
+    position: relative;
+    width: 75vmin;
+    height: 75vmin;
+    z-index: 1;
+    margin: 20px;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: #ffffff0f;
+}
+
+.candle-chart-price-line {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    z-index: 1;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #2751ce98;
+}
+
+.all-candle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.candle {
+    position: relative;
+    left: 0px;
+}
+
+.candle-body {
+    position: absolute;
+    width: 30px;
+
+    /* top, left, and height are set via JS */
+
+    border-radius: 5px;
+}
+
+.candle-red {
+    background-color: #be1919;
+    background-image: radial-gradient(circle at 80% 15%, #ffffff43, transparent 20%);
+}
+
+.candle-green {
+    background-color: #26a413;
+    background-image: radial-gradient(circle at 80% 15%, #ffffff71, transparent 20%);
+}
+
+.candle-wick {
+    position: absolute;
+    width: 2.5px;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#sandbox-section {
+    flex-flow: row wrap;
+    color: white;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    background-image:
+        radial-gradient(circle at 10% 42%, #892e2e69, transparent 25%),
+        radial-gradient(circle at 60% 13%, #70298052, transparent 30%),
+        radial-gradient(circle at 85% 55%, #1d1b6854, transparent 25%),
+        radial-gradient(circle at 85% 55%, #1d1b6854, transparent 25%);
+}
+
+#sandbox-section h1 {
+    margin-left: 2.5vw;
+
+    animation: fade-in 1s linear;
+}
+
+.button-red {
+    background-color: #ba2222bc;
+}
+
+.button-red:hover {
+    background-color: #ba2222cc;
+}
+
+.button-green {
+    background-color: #36ba36bc;
+}
+
+.button-green:hover {
+    background-color: #36ba36cc;
+}
+
+.button-grey {
+    background-color: #292929cc;
+}
+
+#sandbox-section button {
+    width: 41%;
+    height: 50px;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#sandbox-section-chart {
+    width: 90vw;
+    height: 60vh;
+    margin: -20px 20px 0px 20px;
+    box-sizing: border-box;
+}
+
+#sandbox-section p {
+    width: 90vw;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff11;
+}
+
+@media screen and (max-width: 800px)
+{
+    #sandbox-section {
+        flex-flow: column nowrap;
+    }
+
+    #sandbox-section button {
+        width: 95%;
+    }
+
+    #sandbox-section-chart {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+#what-is-candle-chart-section, #how-read-candle-chart-section,
+#how-manage-risk-section {
+    flex-flow: row wrap;
+    align-content: flex-start;
+    background-image:
+        radial-gradient(circle at 10% 42%, #892e2e69, transparent 25%),
+        radial-gradient(circle at 60% 13%, #70298052, transparent 30%),
+        radial-gradient(circle at 85% 70%, #1e1b6880, transparent 25%);
+}
+
+#what-is-candle-chart-section h1, #how-read-candle-chart-section h1,
+#how-manage-risk-section h1 {
+    animation: fade-in 1s linear;
+}
+
+#what-is-candle-chart-section img, #how-read-candle-chart-section img,
+#how-manage-risk-section img {
+    width: 90%;
+}
+
+#share-section {
+    align-items: flex-start;
+}
+
+#share-section h1 {
+    text-align: center;
+}
+
+@keyframes blink {
+    0% {
+        background-color: var(--blink-start-color);
+    }
+
+    50% {
+        background-color: var(--blink-end-color);
+    }
+
+    100% {
+        background-color: var(--blink-start-color)
+    }
+}
+
+/* Defaults to top-down (-20px to 0px offset) fade in */
+@keyframes fade-in {
+    0% {
+        transform: translate(var(--fade-in-start-x, 0px),
+            var(--fade-in-start-y, -10px));
+        opacity: var(--fade-in-start-opacity, 0);
+    }
+
+    50% {
+        transform: translate(var(--fade-in-mid-x, 0px),
+            var(--fade-in-mid-y, -5px));
+        opacity: var(--fade-in-mid-opacity, 0.5);
+    }
+
+    100% {
+        transform: translate(var(--fade-in-end-x, 0px),
+            var(--fade-in-end-y, 0px));
+        opacity: var(--fade-in-end-opacity, 1);
+    }
+}

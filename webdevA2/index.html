@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trading</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav id="content-nav">
+            <a id="content-nav-home">
+                HOME
+            </a>
+
+            <a id="content-nav-contents">
+                CONTENTS
+            </a>
+
+            <a id="content-nav-sandbox">
+                SANDBOX
+            </a>
+        </nav>
+
+        <!-- This section belongs to page `index` -->
+        <section id="main-landing-section" data-page="index">
+            <div>
+                <h1>Your guide into trading</h1>
+                <h2 class="block-cursor">Stocks</h2>
+            </div>
+
+            <div id="main-section-chart" class="candle-chart">
+                <div class="candle-chart-menu">
+                    <div class="candle-chart-price-line"></div>
+                </div>
+
+                <div class="all-candles">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- This section belongs to page `index` -->
+        <section id="content-section" data-page="index">
+            <h1>Table of Contents</h1>
+            <ol id="content-section-list" class="ol-left-accent">
+                <li class="li-translucent li-hover">
+                    What are the different trading instruments?
+                </li>
+
+                <li class="li-translucent li-hover">
+                    The different types of traders.
+                </li>
+
+                <li class="li-translucent li-hover">
+                    What is a candle chart?
+                </li>
+
+                <li class="li-translucent li-hover">
+                    How to read a candle chart?
+                </li>
+
+                <li class="li-translucent li-hover">
+                    How to manage risk?
+                </li>
+            </ol>
+        </section>
+
+        <!-- This section belongs to page `index` -->
+        <section id="share-section" data-page="index">
+            <header>
+                <h1>Share this page!</h1>
+
+                
+            </header>
+        </section>
+
+        <!-- This section belongs to page `what-are-the-different-trading-instruments` -->
+        <section id="trading-instruments-section"
+            data-page="what-are-the-different-trading-instruments">
+            <header>
+                <h1>What are the different trading instruments?</h1>
+                <ol id="trading-instruments-list-1" class="ol-left-accent">
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-stocks">
+                            Stocks
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-options">
+                            Options
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-futures">
+                            Futures
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-etfs">
+                            ETFs
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-cfds">
+                            CFDs
+                        </a>
+                    </li>
+                </ol>
+
+                <ol id="trading-instruments-list-2" class="ol-left-accent" start="6">
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-bonds">
+                            Bonds
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-funds">
+                            Funds
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-swaps">
+                            Swaps
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-forex">
+                            Forex
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#instruments-forward">
+                            Forward
+                        </a>
+                    </li>
+                </ol>
+            </header>
+            
+            <div id="instruments-stocks" class="card">
+                <h2>Stocks</h2>
+
+                <img srcset="images/small/nyse-300w.jpg 300w,
+                    images/large/nyse-1200w.jpg 1200w" sizes="(max-width: 300px) 300px, 1200px"
+                    src="images/large/nyse-1200w.jpg" alt="Top down view of NYSE trading floor after close">
+                <img srcset="images/small/nasdaq-300w.jpg 300w,
+                    images/large/nasdaq-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/nasdaq-1000w.jpg" alt="Exterior of the NASDAQ building">
+
+                <p>
+                    Stocks, shares or equity are a type of security that signifies a fractional ownership of a particular company or corporation. Most stocks are publicly listed on exchanges such as the
+                    <a href="https://www.nyse.com/index" target="_blank">New York Stock Exchange (NYSE)</a>
+                    or
+                    <a href="https://www.nasdaq.com/" target="_blank">National Association of Securities Dealers Automated Quotations (NASDAQ)</a>,
+                    which notably are the 2 largest stock exchanges in the world by total market capitalization of listed companies. Some stocks also pay out regular dividends (usually once a quarter) which are a distribution of the underlying companies profits.
+                    <br><br>
+                    At the time of writing, the top 5 largest publicly traded company by market capitalization are
+                    <a href="https://www.apple.com/" target="_blank">Apple Inc.</a>
+                    <a href="https://www.nasdaq.com/market-activity/stocks/aapl" target="_blank">(AAPL)</a>, 
+                    <a href="https://www.microsoft.com/" target="_blank">Microsoft Corp.</a>
+                    <a href="https://www.nasdaq.com/market-activity/stocks/msft" target="_blank">(MSFT)</a>,
+                    <a href="https://www.aramco.com/" target="_blank">Saudi Aramco</a>
+                    <a href="https://finance.yahoo.com/quote/2222.SR/" target="_blank">(2222.SR)</a>,
+                    <a href="https://abc.xyz/" target="_blank">Alphabet Inc.</a>
+                    <a href="https://www.nasdaq.com/market-activity/stocks/googl" target="_blank">(GOOGL)</a>,
+                    <a href="https://www.amazon.com/" target="_blank">Amazon</a>
+                    <a href="https://www.nasdaq.com/market-activity/stocks/amzn" target="_blank">(AMZN)</a>,
+                    respectively. The string of characters enclosed in parentheses are the stock's ticker/symbol which is used to uniquely identify a stock in an exchange.
+                </p>
+            </div>
+
+            <div id="instruments-options" class="card">
+                <h2>Options</h2>
+
+                <img srcset="images/small/split-path-300w.jpg 300w,
+                    images/large/split-path-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/split-path-1000w.jpg" alt="Path splits into 2">
+
+                <p>
+                    Options are a type of
+                    <a href="https://www.imf.org/external/np/sta/fd/" target="_blank">financial derivative</a>
+                    that give the buyer the right but not the obligation to buy or sell an underlying security at a particular strike price on or before a specified date (dependent on the option's style).
+                    <br><br>
+                    Similar to stock, options may be traded via public exchanges or they can be transacted
+                    <a href="https://www.investopedia.com/terms/o/otc.asp" target="_blank">OTC (over-the-counter)</a>.
+                    Some common option types are the call option (buy) and the put option (sell). There also exist a myriad of options strategies, some examples include
+                    <a href="https://www.fidelity.com/learning-center/investment-products/options/why-use-a-covered-call" target="_blank">covered call</a>,
+                    <a href="https://www.optionseducation.org/strategies/all-strategies/protective-put-married-put" target="_blank">married put</a>,
+                    <a href="https://www.investopedia.com/terms/l/longstraddle.asp" target="_blank">long straddle</a>,
+                    <a href="https://www.optionsplaybook.com/option-strategies/iron-condor/" target="_blank">iron condor</a>
+                    and others.
+                    <br><br>
+                    The options contract can be targeted against a bunch of underlying assets, including but not limited to equity options, bond options, future options, index options and many others.
+                    <br><br>
+                    The pricing or
+                    <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model" target="_blank">valuation models</a>
+                    is complex and has high mathematical rigor.
+                    <br><br>
+                    Due to their inherit volatility and more complex nature, it carries a lot higher risk than standard stock trading. It should only be executed by seasoned experts.
+                </p>
+            </div>
+
+            <div id="instruments-futures" class="card">
+                <h2>Futures</h2>
+
+                <img srcset="images/small/trading-floor-300w.jpg 300w,
+                    images/large/trading-floor-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/trading-floor-1000w.jpg" alt="Trading floor packed with people with 2 banners at the back reading CME Group and NYMEX">
+                <img srcset="images/small/prices-300w.jpg 300w,
+                    images/large/prices-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/prices-1000w.jpg" alt="A screen with a bunch of red and green prices">
+
+                <p>
+                    Similar to the above options, futures are also a type of financial derivative. However, one striking difference is that the buying or selling of the underlying asset is obligated to be performed at a specific future date and price unlike options.
+                    <br><br>
+                    They are normally traded using futures exchanges such as
+                    <a href="https://www.cmegroup.com/" target="_blank">CME Group</a>
+                    or
+                    <a href="https://www.ice.com/index" target="_blank">Intercontinental Exchange</a>.
+                    It can also be traded OTC.
+                    <br><br>
+                    Since these are highly leverage products (i.e. the trader does not need to fork up the full amount upfront, but insteads uses borrowed money, allowing higher leverage of one's liquid assets), it involves high risk.
+                </p>
+            </div>
+
+            <div id="instruments-etfs" class="card">
+                <h2>ETFs</h2>
+
+                <img srcset="images/small/tree-growth-300w.jpg 300w,
+                    images/large/tree-growth-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/tree-growth-1000w.jpg" alt="Trees sitting on coins forming a shape of a growing graph">
+
+                <p>
+                    ETFs also known as Exchange-Traded Funds are investment funds that are traded on exchanges. Most track a particular stock, bond or commodities. They are generally similar to mutual funds, where the pooled sum of money is managed by fund managers.
+                    <br><br>
+                    They can be purchased and sold similar to that of stocks. Some ubiquitous ETFs include
+                    <a href="https://www.invesco.com/qqq-etf/en/home.html" target="_blank">QQQ</a>,
+                    <a href="https://www.ssga.com/us/en/intermediary/etfs/funds/spdr-sp-500-etf-trust-spy" target="_blank">SPY</a>,
+                    which track the
+                    <a href="https://www.nasdaq.com/market-activity/index/ndx" target="_blank">NASDAQ 100</a>
+                    and
+                    <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview" target="_blank">S&P 500</a>
+                    indices respectively.
+                </p>
+            </div>
+
+            <div id="instruments-cfds" class="card">
+                <h2>CFDs</h2>
+
+                <img srcset="images/small/chart-300w.jpg 300w,
+                    images/large/chart-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/chart-1000w.jpg" alt="Generic candle chart and some line graphs">
+
+                <p>
+                    CFDs also know as contract for difference are an agreement between two parties that they will cash-settle the difference between prices now and the stipulated time in the future. Whatever profit one side makes will be handed over by the losing end.
+                    <br><br>
+                    Since the both parties in the CFD contract do not actually own the underlying asset they can gain exposure to the risk and rewards of the asset without owning it. CFDs also typically allow for higher margin as compared to other alternatives.
+                    <br><br>
+                    Similar to the above few instruments, CFDs are also extremely risky and are only suitable for experts.
+                </p>
+            </div>
+
+            <div id="instruments-bonds" class="card">
+                <h2>Bonds</h2>
+
+                <img srcset="images/small/us-treasury-300w.jpg 300w,
+                    images/large/us-treasury-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/us-treasury-1000w.jpg" alt="Zoomed in image of a US bill focusing on the words US Treasury">
+                <img srcset="images/small/bonds-300w.jpg 300w,
+                    images/large/bonds-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/bonds-1000w.jpg" alt="Pixelated screen displaying the word bonds">
+
+                <p>
+                    Bonds are a type of security that is a contract between the borrower and the investor, with the borrower typically being large corporates or governments. The details of the bond include the specifics of the interest rates and payment dates.
+                    <br><br>
+                    Once the bond reaches maturity, the borrower will be required to return the full principal sum back to the investor.
+                    <br><br>
+                    Some examples of bonds issued by governments include,
+                    <a href="https://www.mas.gov.sg/bonds-and-bills/singapore-savings-bonds" target="_blank">Singapore Savings Bond (SSB)</a>,
+                    <a href="https://www.treasurydirect.gov/marketable-securities/treasury-bonds/" target="_blank">US Treasury Bonds</a>
+                    and many other.
+                </p>
+            </div>
+
+            <div id="instruments-funds" class="card">
+                <h2>Funds</h2>
+
+                <img srcset="images/small/rolled-cash-300w.jpg 300w,
+                    images/large/rolled-cash-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/rolled-cash-1000w.jpg" alt="Some rolled up cash at the corner tied using a red band">
+                <img srcset="images/small/briefcase-cash-300w.jpg 300w,
+                    images/large/briefcase-cash-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/briefcase-cash-1000w.jpg" alt="A briefcase full of cash and some outside as well">
+
+                <p>
+                    An investment fund is a pool of money that is typically managed by professional fund managers. An example of a type of fund include mutual funds, which are used to invest into a diverse portfolio of assets.
+                    <br><br>
+                    Another common type of funds are hedge funds which use liquid assets combined with more complex and diverse strategies in an attempt to improve performance and returns of their investment. The people that manage such funds are aptly named hedge fund managers.
+                </p>
+            </div>
+
+            <div id="instruments-swaps" class="card">
+                <h2>Swaps</h2>
+
+                <img srcset="images/small/exchange-cash-300w.jpg 300w,
+                    images/large/exchange-cash-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/exchange-cash-1000w.jpg" alt="2 people holding and exchange cash">
+
+                <p>
+                    Swaps are yet another type of derivatives that is an agreement of 2 parties to exchange either financial instruments, cashflow some others. Most swaps are cash based.
+                    <br><br>
+                    A main difference to the above difference is that swaps are mainly OTC only. Retail investors do not engage in swaps.
+                </p>
+            </div>
+
+            <div id="instruments-forex" class="card">
+                <h2>Forex</h2>
+
+                <img srcset="images/small/currency-pair-300w.jpg 300w,
+                    images/large/currency-pair-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/currency-pair-1000w.jpg" alt="Side view of a blurred computer screen showing a candlestick chart of a currency pair">
+                <img srcset="images/small/coins-and-cash-300w.jpg 300w,
+                    images/large/coins-and-cash-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/coins-and-cash-1000w.jpg" alt="A stack of coins on top of the different denominations of cash notes spread out">
+
+                <p>
+                    Forex (Foreign Exchange/FX) are markets for trading currency pair and their derivatives. This is the most liquid market globally by total volume.
+                    <br><br>
+                    Currency pair are typically written like
+                    <a href="https://sg.finance.yahoo.com/quote/SGD%3DX/" target="_blank">USD/SGD</a>
+                    which means the United States Dollar (USD) against the Singapore Dollar (SGD), with the number representing the amount of SGD needed for 1 USD.
+                    <br><br>
+                    A commonly used term in forex trading is pip or pips which is abbreviated from percentage in point. They represent the fourth decimal place in a common currency pair. For example if the USD/SGD moves up by S$0.0001, we can say it rose by 1 pip.
+                </p>
+            </div>
+
+            <div id="instruments-forward" class="card">
+                <h2>Forward</h2>
+
+                <img srcset="images/small/handshake-300w.jpg 300w,
+                    images/large/handshake-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/handshake-1000w.jpg" alt="2 people in suits handshaking">
+
+                <p>
+                    Forwards are custom or non-standard contracts between 2 parties to engage in buying or selling at some point in the future. These are also OTC instruments. Forwards are unlike futures in that it allows more flexibility between parties, but with higher risk due to relatively lower regulation.
+                </p>
+            </div>
+        </section>
+
+        <!-- This section belongs to page `the-different-types-of-traders` -->
+        <section id="types-of-traders-section"
+            data-page="the-different-types-of-traders">
+            <header>
+                <h1>The different types of traders</h1>
+                <ol id="types-of-traders-list-1" class="ol-left-accent">
+                    <li class="li-translucent li-hover">
+                        <a href="#fundamental-trader">
+                            Fundamental Trader
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#technical-trader">
+                            Technical Trader
+                        </a>
+                    </li>
+                </ol>
+
+                <ol id="types-of-traders-list-2" class="ol-left-accent" start="3">
+                    <li class="li-translucent li-hover">
+                        <a href="#swing-trader">
+                            Swing Trader
+                        </a>
+                    </li>
+
+                    <li class="li-translucent li-hover">
+                        <a href="#scalper">
+                            Scalper
+                        </a>
+                    </li>
+                </ol>
+
+                <div id="fundamental-trader" class="card">
+                    <h2>Fundamental Trader</h2>
+
+                    <img srcset="images/small/contracts-300w.jpg 300w,
+                    images/large/contracts-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/contracts-1000w.jpg" alt="2 people discussing about contracts">
+
+                    <p>
+                        A fundamental trader looks at and makes trading decisions based on company released reports and their specific events. They mainly look for long-term trades and do not wish to make quick trades.
+                    </p>
+                </div>
+
+                <div id="technical-trader" class="card">
+                    <h2>Technical Trader</h2>
+
+                    <img srcset="images/small/currency-pair-300w.jpg 300w,
+                    images/large/currency-pair-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/currency-pair-1000w.jpg" alt="Side view of a blurred computer screen showing a candlestick chart of a currency pair">
+
+                    <p>
+                        A technical trader can be thought of as the opposite of a fundamental one. They instead look and analyse graph, charts and historical data for their decision making. These group of traders are also more likely to make short term trades in an attempt to capture current events.
+                    </p>
+                </div>
+
+                <div id="swing-trader" class="card">
+                    <h2>Swing Trader</h2>
+
+                    <img srcset="images/small/chart-300w.jpg 300w,
+                    images/large/chart-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/chart-1000w.jpg" alt="Generic candle chart and some line graphs">
+
+                    <p>
+                        Swing traders are like the middle ground of fundamental and technical, since they use both types of analysis. They generally hold short to medium term investments, maybe in the order of a week or two.
+                    </p>
+                </div>
+
+                <div id="scalper" class="card">
+                    <h2>Scalper</h2>
+
+                    <img srcset="images/small/prices-300w.jpg 300w,
+                    images/large/prices-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/prices-1000w.jpg" alt="A screen with a bunch of red and green prices">
+
+                    <p>
+                        Scaplers attempt to make super short lived trades to capture and profit from minute movement in the markets. The trades are typically way shorter than that of a technical trader. Ranging from couple seconds to minutes.
+                    </p>
+                </div>
+            </header>
+        </section>
+
+        <!-- This section belongs to page `what-is-a-candle-chart` -->
+        <section id="what-is-candle-chart-section"
+            data-page="what-is-a-candle-chart">
+            <header>
+                <h1>What is a candle chart?</h1>
+            </header>
+
+            <div class="card">
+                <h2>Candlestick Chart</h2>
+
+                <img srcset="images/small/chart-300w.jpg 300w,
+                    images/large/chart-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/chart-1000w.jpg" alt="Generic candle chart and some line graphs">
+
+                <p>
+                    Candlestick chart represent price movement and can be used by technical analyst to determine their current stance. It also depicts emotions of the people currently trading the underlying security.
+                </p>
+            </div>
+        </section>
+
+        <!-- This section belongs to page `how-to-read-a-candle-chart` -->
+        <section id="how-read-candle-chart-section"
+            data-page="how-to-read-a-candle-chart">
+            <header>
+                <h1>How to read a candle chart?</h1>
+            </header>
+
+            <div class="card">
+                <h2>Candlestick chart explained</h2>
+
+                <img srcset="images/small/chart-explained-300w.jpg 300w,
+                    images/large/chart-explained-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/chart-explained-1000w.jpg" alt="How to read and interpret the different candles">
+            </div>
+        </section>
+
+        <!-- This section belongs to page `how-to-manage-risk` -->
+        <section id="how-manage-risk-section"
+            data-page="how-to-manage-risk">
+            <header>
+                <h1>How to manage risk?</h1>
+            </header>
+
+            <div class="card">
+                <h2>Proper risk management</h2>
+
+                <img srcset="images/small/sad-300w.jpg 300w,
+                    images/large/sad-1000w.jpg 1000w" sizes="(max-width: 300px) 300px, 1000px"
+                    src="images/large/sad-1000w.jpg" alt="Person looking depressed and sad while covering their face">
+
+                <p>
+                    Planning of trades before making them and following said plan during the full execution is very important. Especially for beginners, the emotions of losing money can cause rushed entries and exits from the market leading to realized losses.
+                    <br><br>
+                    Properly set and adhere to your stop loss and take profit levels. Being greedy once the trade turned in your favour is how many turn a winning trade is a losing one.
+                    <br><br>
+                    Diversity in market exposure is paramount to reduce the impact of your portfolio should one sector underperform.
+                </p>
+            </div>
+        </section>
+
+        <!-- This section belongs to page `sandbox` -->
+        <section id="sandbox-section" data-page="sandbox">
+            <header>
+                <h1>
+                    Sandbox
+                </h1>
+            </header>
+
+            <div id="sandbox-section-chart" class="candle-chart">
+                <div class="candle-chart-menu">
+                    <div class="candle-chart-price-line"></div>
+                </div>
+
+                <div class="all-candles">
+
+                </div>
+            </div>
+
+            <p id="sandbox-current-price">$0.00</p>
+            <p id="sandbox-profits">Profits: $0.00</p>
+
+            <button id="sandbox-buy-btn" class="button-green">Buy</button>
+            <button id="sandbox-sell-btn" class="button-red">Sell</button>
+        </section>
+
+        <footer id="credits-and-disclaimer">
+            <h3>
+                Done by: Chang Cheng Jun
+            </h3>
+
+            <p>
+                All content and infomation presented are for educational and entertainment
+                purposes only, they do not constitute financial advice. Past performance
+                is not indicative of the future. All forms of trading carries risk.
+            </p>
+        </footer>
+    </body>
+</html>
