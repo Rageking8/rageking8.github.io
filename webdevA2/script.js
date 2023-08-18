@@ -1062,6 +1062,10 @@ class Program
             document.querySelector("#sandbox-section-chart");
         this.#dom_refs["sandbox-current-price"] =
             document.querySelector("#sandbox-current-price");
+        this.#dom_refs["sandbox-buy-price"] =
+            document.querySelector("#sandbox-buy-price");
+        this.#dom_refs["sandbox-sell-price"] =
+            document.querySelector("#sandbox-sell-price");
         this.#dom_refs["sandbox-profits"] =
             document.querySelector("#sandbox-profits");
 
@@ -1098,7 +1102,7 @@ class Program
             new Date("2023-08-07T01:00:00"), 100
         );
 
-        setInterval(this.#update_sandbox_section_candle_chart.bind(this), 50);
+        setInterval(this.#update_sandbox_section_candle_chart.bind(this), 300);
 
         this.#init_content_section_list();
         this.#init_content_nav();
@@ -1542,12 +1546,16 @@ class Program
             buy_btn.classList.replace("button-green", "button-grey");
             this.#sandbox_in_price = current_price;
             this.#sandbox_in_buy = true;
+            this.#dom_refs["sandbox-buy-price"].innerText =
+                "Bought at $" + current_price.toFixed(2);
         }
         else
         {
             sell_btn.classList.replace("button-grey", "button-red");
             this.#sandbox_profits += this.#sandbox_in_price - current_price;
             this.#sandbox_in_sell = false;
+            this.#dom_refs["sandbox-buy-price"].innerText =
+                "Bought at $" + current_price.toFixed(2);
         }        
     }
 
@@ -1569,12 +1577,16 @@ class Program
             sell_btn.classList.replace("button-red", "button-grey");
             this.#sandbox_in_price = current_price;
             this.#sandbox_in_sell = true;
+            this.#dom_refs["sandbox-sell-price"].innerText =
+                "Sell at $" + current_price.toFixed(2);
         }
         else
         {
             buy_btn.classList.replace("button-grey", "button-green");
             this.#sandbox_profits += current_price - this.#sandbox_in_price;
             this.#sandbox_in_buy = false;
+            this.#dom_refs["sandbox-sell-price"].innerText =
+                "Sell at $" + current_price.toFixed(2);
         }
     }
 
